@@ -129,6 +129,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#parkingAllowed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#parkingAllowed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#roadIsType -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#roadIsType">
@@ -435,6 +444,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
     </owl:Class>
     
 
