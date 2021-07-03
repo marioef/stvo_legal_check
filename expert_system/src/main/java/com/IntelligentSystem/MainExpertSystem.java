@@ -27,10 +27,11 @@ public class MainExpertSystem {
             "                PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>",
             "                PREFIX sys:        <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#>                                                                                ",
             "                                                                                                                                       ",
-            "                SELECT ?individual                                                                                                  ",
+            "                SELECT ?car ?lane                                                                                                  ",
             "                WHERE {                                                                                                     ",
             "                {                                                                                                                     ",
-            "                  ?individual rdf:type sys:Car                                                                                                                 ",
+            "                  ?car rdf:type sys:Car.                                                                                                                 ",
+            "                  ?lane rdf:type sys:OneWayLane.                                                 ",
             "                }}");
 
     private static final String document = "../parking.owl";
