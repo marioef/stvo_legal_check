@@ -1,0 +1,1247 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#currentlyDoing -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#currentlyDoing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasIntersection -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasIntersection">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasLane -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasLane">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasRoadSegment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasRoadSegment">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isConnectedTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isConnectedTo">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLaneOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLaneOf">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isOn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isOn">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRoadSegmentOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRoadSegmentOf">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#relatedTrafficLight -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#relatedTrafficLight">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSignal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#speed -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#speed">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#speedMax -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#speedMax">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#toDoNext -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#toDoNext"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#trafficSignalForDirection -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#trafficSignalForDirection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnLeftTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnLeftTo">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnRightTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnRightTo">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#direction -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#direction">
+        <rdfs:comment>light for direction</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#intention -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#intention">
+        <rdfs:comment>we could use this for the participants intention what to do next, mybe with enum kinda datatype?</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">
+        <rdfs:comment>kilometer per hour</rdfs:comment>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#signalcolor -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#signalcolor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#state -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#state">
+        <rdfs:comment>what is the participant currently doing?</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#trafficSignalColor -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#trafficSignalColor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasIntersection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasIntersection">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasJunction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasJunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasJunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Junction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasLane -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasLane">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLaneOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasLaneAdapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasLaneAdapter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasJunction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LaneAdapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasMarking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasMarking">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasParticipant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isOn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Infrastructure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasRoadSegment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasRoadSegment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRoadSegmentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasRoundAbout -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasRoundAbout">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasJunction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoundAbout"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasTurn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasTurn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasJunction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Turn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isConnectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isConnectedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLaneOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLaneOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLeftOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLeftOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRightOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isNextTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isNextTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isParking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isParking">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRightOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRightOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRoadSegmentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRoadSegmentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#relatedTrafficLight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#relatedTrafficLight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#trafficSignalForDirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#trafficSignalForDirection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSignal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnArround -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnArround">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+        <rdfs:comment>&quot;Wenden&quot;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnLeftTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnLeftTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnRightTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnRightTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#turnRightTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#waitForSignal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#waitForSignal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#drivingDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#drivingDirection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#direction"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#signalColour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#signalColour">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSignal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#trafficSignalColor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#speed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#speedMax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#speedMax">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Bicycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Bicycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#BicycleLane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#BicycleLane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#BusLane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#BusLane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#CrosswalkRoadSegment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#CrosswalkRoadSegment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#DutyWaitToOpposite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#DutyWaitToOpposite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#GiveWay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#GiveWay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PrioritySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Highway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Highway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+        <speedMax rdf:datatype="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">130</speedMax>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#InformalSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#InformalSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSign"/>
+        <rdfs:comment>general informal sign, does not influence any stvo rules hence only one class</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Infrastructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Junction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Junction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Junction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LaneAdapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LaneAdapter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Junction"/>
+        <rdfs:comment>used when # lanes change</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftOnly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftOnly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftOnlyMarking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftOnlyMarking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftRightMarking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftRightMarking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftRightStraightMarking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftRightStraightMarking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftStraightMarking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#LeftStraightMarking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Motorcycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Motorcycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Motorway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Motorway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+        <speedMax rdf:datatype="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">100</speedMax>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoBycles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoBycles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoDriving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoDriving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+        <rdfs:comment>&quot;Fahrverbot&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoEntry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoEntry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+        <rdfs:comment>&quot;Einfahrt verboten&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoHaltingNoParking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoHaltingNoParking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoHaltingNoParkingEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoHaltingNoParkingEnd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoLeftTurn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoLeftTurn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoMotorcycles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoMotorcycles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoOvertakingByTrucks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoOvertakingByTrucks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoOvertakingByTrucksEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoOvertakingByTrucksEnd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoOvertakingEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoOvertakingEnd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoOvertakingStart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoOvertakingStart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoParking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoParking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoParkingEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoParkingEnd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoPedestriants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoPedestriants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoPowerDrivenVehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoPowerDrivenVehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoRightTurn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoRightTurn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoTrucks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoTrucks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoTurnArround -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#NoTurnArround">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OrdinaryRoad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OrdinaryRoad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OverTakingSpeedLimitEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OverTakingSpeedLimitEnd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Pedestrian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Pedestrian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PriorityRoad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PriorityRoad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PrioritySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PriorityRoadEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PriorityRoadEnd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PrioritySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PrioritySigns -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PrioritySigns">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PriviledgedRoad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PriviledgedRoad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OrdinaryRoad"/>
+        <speedMax rdf:datatype="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">100</speedMax>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ProhibitorySigns">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RightOnly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RightOnly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RightOnlyMarking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RightOnlyMarking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RightStraightMarking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RightStraightMarking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Infrastructure"/>
+        <rdfs:comment>https://autobahn.fandom.com/wiki/Stra%C3%9Fensystem_in_%C3%96sterreich</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadWithPriviledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadWithPriviledge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OrdinaryRoad"/>
+        <speedMax rdf:datatype="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">100</speedMax>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadWithoutPriviledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadWithoutPriviledge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OrdinaryRoad"/>
+        <speedMax rdf:datatype="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">50</speedMax>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoundAbout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoundAbout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Junction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SolidLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SolidLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit100 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit100">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit100End -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit100End">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit130 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit130">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit130End -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit130End">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit30 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit30">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit30End -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit30End">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50End -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50End">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit70 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit70">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit70End -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit70End">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Stop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Stop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#PrioritySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StraightOnly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StraightOnly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StraightOrLeft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StraightOrLeft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StraightOrRight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StraightOrRight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ThreeWayLane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#ThreeWayLane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSign"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSignal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSignal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Truck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Truck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Turn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Turn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Junction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TurnLeft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TurnLeft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TurnLeftRight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TurnLeftRight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TurnRight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TurnRight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MandatorySigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TwoWayLane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TwoWayLane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#WarningSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#WarningSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSign"/>
+        <rdfs:comment>general warning, does not influence any stvo rules hence only one class</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
