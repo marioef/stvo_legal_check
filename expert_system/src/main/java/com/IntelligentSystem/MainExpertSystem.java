@@ -9,10 +9,14 @@ import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
-import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.reasoner.rulesys.GenericRuleReasoner;
+import org.apache.jena.reasoner.rulesys.Rule;
 import org.apache.jena.util.iterator.ExtendedIterator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 public class MainExpertSystem {
 
@@ -36,6 +40,11 @@ public class MainExpertSystem {
 
     private static final String document = "../parking.owl";
 
+/*
+    private static final String ruleSrc = "@prefix sys: <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#>." +
+            //"PREFIX sys: <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#>" +
+            "[rule0: (?lane rdf:type ?laneType), (?laneType  subClassOf sys:OneWayLane), (?lane sys:hasParticipant ?car)  -> (?car sys:test \"true\") ]";
+*/
     /**
      * Examples of SPARQL with apache jena
      *
@@ -47,10 +56,18 @@ public class MainExpertSystem {
         log.info(query);
 
         log.info("Creates the OWL model");
-        OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
+        //OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RULE_INF);
+        Model defmodel = ModelFactory.createDefaultModel();
 
         log.info("Reads the document");
-        model.read(document);
+        defmodel.read(document);
+
+        //List<Rule> rules = Rule.parseRules( ruleSrc );
+        //GenericRuleReasoner reasoner = new GenericRuleReasoner(rules);
+
+        GenericRuleReasoner reasoner = new GenericRuleReasoner( Rule.rulesFromURL( "../rules" ) );
+        reasoner.setMode(GenericRuleReasoner.HYBRID);
+        InfModel model = ModelFactory.createInfModel(reasoner, defmodel);
 
         log.info("Query execution is created for the example query");
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
@@ -64,10 +81,22 @@ public class MainExpertSystem {
             log.info("Solution: " + sol);
         }
 
-        log.info("Obtain the properties of the model");
+        /*
+        StmtIterator it = model.listStatements();
+
+        while(it.hasNext()) {
+            Statement stmt = it.nextStatement();
+
+            Resource subject = stmt.getSubject();
+            Property predicate = stmt.getPredicate();
+            RDFNode object = stmt.getObject();
+            System.out.println( subject.toString() + " " + predicate.toString() + " " + object.toString() );
+        }
+        */
+        /*log.info("Obtain the properties of the model");
         ExtendedIterator<ObjectProperty> properties = model.listObjectProperties();
 
-		/*log.info("Iterates over the properties");
+		log.info("Iterates over the properties");
 		while (properties.hasNext()) {
 			log.info("Property: " + properties.next().getLocalName());
 		}

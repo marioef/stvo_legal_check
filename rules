@@ -1,0 +1,4 @@
+@prefix sys: <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+[rule0: (?lane sys:hasParticipant ?car), (?lane rdf:type ?laneBaseType), listNotEqual(?laneBaseType,sys:OneWayLane) -> print("rule0 fired")]
