@@ -22,22 +22,18 @@ public class MainExpertSystem {
      * An SPARQL example
      */
     private static final String query = String.join(System.lineSeparator(),
-            "                PREFIX knowrob: <http://ias.cs.tum.edu/kb/knowrob.owl#>",
-            "                PREFIX comp:   <http://ias.cs.tum.edu/kb/srdl2-comp.owl#>",
-            "                PREFIX owl:                      <http://www.w3.org/2002/07/owl#>",
-            "                PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>",
+            "                PREFIX rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+            "                PREFIX owl:        <http://www.w3.org/2002/07/owl#>",
+            "                PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>",
+            "                PREFIX sys:        <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#>                                                                                ",
             "                                                                                                                                       ",
-            "                SELECT ?x                                                                                                   ",
+            "                SELECT ?individual                                                                                                  ",
             "                WHERE {                                                                                                     ",
             "                {                                                                                                                     ",
-            "                  ?x rdfs:subClassOf [                                                                             ",
-            "                    a owl:Restriction;                                                                                ",
-            "                    owl:onProperty ?p ;                                                                            ",
-            "                    owl:someValuesFrom ?y                                                                   ",
-            "                  ] .                                                                                                                 ",
+            "                  ?individual rdf:type sys:Car                                                                                                                 ",
             "                }}");
 
-    private static final String document = "http://ias.cs.tum.edu/kb/knowrob.owl#";
+    private static final String document = "../parking.owl";
 
     /**
      * Examples of SPARQL with apache jena
