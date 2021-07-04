@@ -25,7 +25,7 @@ public class MainExpertSystem {
     /**
      * An SPARQL example
      */
-    private static final String query = String.join(System.lineSeparator(),
+    private static final String query_parking = String.join(System.lineSeparator(),
             "                PREFIX rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
             "                PREFIX owl:        <http://www.w3.org/2002/07/owl#>",
             "                PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>",
@@ -34,17 +34,28 @@ public class MainExpertSystem {
             "                SELECT ?car ?lane                                                                                                  ",
             "                WHERE {                                                                                                     ",
             "                {                                                                                                                     ",
-            "                  ?car rdf:type sys:Car.                                                                                                                 ",
-            "                  ?lane rdf:type sys:OneWayLane.                                                 ",
+            "                  ?car rdf:type sys:Car .                                                                                                                 ",
+            "                  ?lane rdf:type sys:OneWayLane .                                                 ",
             "                }}");
 
-    private static final String document = "../parking.owl";
+    private static final String query_intersection = String.join(System.lineSeparator(),
+            "                PREFIX rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+            "                PREFIX owl:        <http://www.w3.org/2002/07/owl#>",
+            "                PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>",
+            "                PREFIX sys:        <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#>                                                                                ",
+            "                                                                                                                                       ",
+            "                SELECT ?car ?lane                                                                                                  ",
+            "                WHERE {                                                                                                     ",
+            "                {                                                                                                                     ",
+            "                  ?car rdf:type sys:Car .                                                                                                                 ",
+            "                  ?lane rdf:type sys:OneWayLane .                                                 ",
+            "                  ?car sys:isOn ?lane .                                                 ",
+            "                }}");
 
-/*
-    private static final String ruleSrc = "@prefix sys: <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#>." +
-            //"PREFIX sys: <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#>" +
-            "[rule0: (?lane rdf:type ?laneType), (?laneType  subClassOf sys:OneWayLane), (?lane sys:hasParticipant ?car)  -> (?car sys:test \"true\") ]";
-*/
+
+    private static final String document_parking = "../parking.owl";
+    private static final String document_intersection = "../intersection.owl";
+
     /**
      * Examples of SPARQL with apache jena
      *
@@ -53,14 +64,14 @@ public class MainExpertSystem {
     public static void main(String[] args) {
 
         log.info("Example SPARQL query: ");
-        log.info(query);
+        log.info(query_intersection);
 
         log.info("Creates the OWL model");
         //OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RULE_INF);
         Model defmodel = ModelFactory.createDefaultModel();
 
         log.info("Reads the document");
-        defmodel.read(document);
+        defmodel.read(document_intersection);
 
         //List<Rule> rules = Rule.parseRules( ruleSrc );
         //GenericRuleReasoner reasoner = new GenericRuleReasoner(rules);
@@ -70,7 +81,7 @@ public class MainExpertSystem {
         InfModel model = ModelFactory.createInfModel(reasoner, defmodel);
 
         log.info("Query execution is created for the example query");
-        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        QueryExecution qexec = QueryExecutionFactory.create(query_intersection, model);
 
         log.info("Obtains the result set");
         ResultSet results = qexec.execSelect();
