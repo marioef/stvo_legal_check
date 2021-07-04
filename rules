@@ -1,4 +1,7 @@
-@prefix sys: <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#> .
+@prefix sys:       <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#> .
 @prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
 
-[rule0: (?lane sys:hasParticipant ?car), (?lane rdf:type ?laneBaseType), listNotEqual(?laneBaseType,sys:OneWayLane) -> print("rule0 fired")]
+[rule1: (?lane rdf:type ?laneType), (?laneType rdfs:subClassOf sys:Lane), (?car rdf:type ?carType), (?carType rdfs:subClassOf sys:Participants), (?lane sys:hasParticipant ?car), (?car sys:isDriving ?lane) -> (?car sys:Situation "rule1"), print("rule1 fired", ?car, ?lane)]
+
+[reasoning: (?car sys:Situation "rule1") -> (?car sys:Situation "legal"), print(?car," is legal")]

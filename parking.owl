@@ -87,6 +87,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isDriving -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isDriving">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isParking"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isWaiting"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLaneOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isLaneOf">
@@ -125,13 +135,24 @@
 
     <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isParking -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isParking"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isParking">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isWaiting"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRightOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isRightOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isWaiting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#isWaiting">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+    </owl:ObjectProperty>
     
 
 
@@ -518,10 +539,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Audi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Audi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lilienthalgasse"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lilienthalgasse -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lilienthalgasse">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Audi"/>
         <hasParticipant rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Skoda"/>
     </owl:NamedIndividual>
     
