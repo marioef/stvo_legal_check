@@ -1147,6 +1147,277 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSign"/>
         <rdfs:comment>general warning, does not influence any stvo rules hence only one class</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane1"/>
+        <isWaiting rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car2"/>
+        <turnRightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
+        <speed rdf:datatype="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">0</speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
+        <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane1"/>
+        <speed rdf:datatype="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">40</speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2"/>
+        <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane1"/>
+        <speed rdf:datatype="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#kmh">50</speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <isConnectedTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1"/>
+        <isConnectedTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1"/>
+        <isConnectedTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1"/>
+        <isConnectedTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadWithPriviledge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50"/>
+        <hasIntersection rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <hasRoadSegment rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+        <hasLane rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane1"/>
+        <hasLane rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane2"/>
+        <isConnectedTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <isRoadSegmentOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Stop"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasMarking"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StopLine"/>
+            </owl:Restriction>
+        </rdf:type>
+        <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane2"/>
+        <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1"/>
+        <turnLeftTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2"/>
+        <turnRightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toIntersection</drivingDirection>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1"/>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fromIntersection</drivingDirection>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadWithPriviledge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50"/>
+        <hasIntersection rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <hasRoadSegment rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+        <hasLane rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane1"/>
+        <hasLane rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2"/>
+        <isConnectedTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <isRoadSegmentOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Stop"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasMarking"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StopLine"/>
+            </owl:Restriction>
+        </rdf:type>
+        <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
+        <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1"/>
+        <turnLeftTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane2"/>
+        <turnRightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane2"/>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toIntersection</drivingDirection>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1"/>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fromIntersection</drivingDirection>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadWithPriviledge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50"/>
+        <hasIntersection rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <hasRoadSegment rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+        <hasLane rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane1"/>
+        <hasLane rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane2"/>
+        <isConnectedTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <isRoadSegmentOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Stop"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasMarking"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StopLine"/>
+            </owl:Restriction>
+        </rdf:type>
+        <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane2"/>
+        <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1"/>
+        <turnLeftTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
+        <turnRightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2"/>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toIntersection</drivingDirection>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1"/>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fromIntersection</drivingDirection>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadWithPriviledge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#SpeedLimit50"/>
+        <hasIntersection rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <hasRoadSegment rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadSegment"/>
+        <hasLane rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane1"/>
+        <hasLane rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
+        <isConnectedTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
+        <isRoadSegmentOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Stop"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#hasMarking"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StopLine"/>
+            </owl:Restriction>
+        </rdf:type>
+        <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2"/>
+        <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1"/>
+        <turnLeftTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane2"/>
+        <turnRightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane2"/>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toIntersection</drivingDirection>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#OneWayLane"/>
+        <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1"/>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fromIntersection</drivingDirection>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
