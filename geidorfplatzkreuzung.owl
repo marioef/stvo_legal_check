@@ -107,6 +107,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#driveTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#driveTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo">
@@ -1249,6 +1259,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Bus1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Bus"/>
+        <driveTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#HeinrichstraßeRS1Lane2"/>
         <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#BergmanngasseRS1Lane1"/>
         <isWaiting rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Geidorfplatzkreuzung"/>
         <turnLeftTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#HeinrichstraßeRS1Lane2"/>
@@ -1262,6 +1273,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <driveTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#GlacistraßeRS1Lane2"/>
         <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Geidorfplatzkreuzung"/>
         <isNextTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car2"/>
         <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MariaTheresiaAlleeRS1Lane1"/>
@@ -1275,6 +1287,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car2">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <driveTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#HeinrichstraßeRS1Lane2"/>
         <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#HeinrichstraßeRS1Lane2"/>
         <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Geidorfplatzkreuzung"/>
         <isNextTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car1"/>
@@ -1392,7 +1405,7 @@
         <relatedTrafficLight rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#TrafficSignal5"/>
         <turnLeftTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#GlacistraßeRS1Lane2"/>
         <turnRightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#BergmanngasseRS1Lane2"/>
-        <signalColour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toIntersection</signalColour>
+        <drivingDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toIntersection</drivingDirection>
     </owl:NamedIndividual>
     
 
@@ -1453,6 +1466,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MotorCycle1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Motorcycle"/>
+        <driveTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MariaTheresiaAlleeRS1Lane1"/>
         <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#MariaTheresiaAlleeRS1Lane1"/>
         <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Geidorfplatzkreuzung"/>
         <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#HeinrichstraßeRS1Lane1"/>

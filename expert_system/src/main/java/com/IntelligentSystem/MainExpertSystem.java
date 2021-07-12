@@ -44,21 +44,21 @@ public class MainExpertSystem {
             "                PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>",
             "                PREFIX sys:        <http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#>                                                                                ",
             "                                                                                                                                       ",
-            "                SELECT ?car                                                                                                  ",
+            "                SELECT ?car ?rule                                                                                                  ",
             "                WHERE {                                                                                                     ",
             "                {                                                                                                                     ",
-            "                  ?car rdf:type sys:Car .                                                                                                                 ",
+            "                  ?car rdf:type ?carType .                                                                                                                 ",
+            "                  ?carType rdfs:subClassOf sys:Participants .                                                                                                                 ",
             "                  ?lane rdf:type ?laneType .                                                 ",
             "                  ?laneType rdfs:subClassOf sys:Lane .                                                 ",
             "                  ?car sys:isOn ?lane .                                                 ",
-            "                  ?car sys:Situation \"not legal\" .                                                 ",
-
+            "                  ?car sys:Situation ?rule .                                                 ",
             "                }}");
 
 
-    private static final String document_parking = "../parking.owl";
-    private static final String document_intersection = "../intersection_not_legal.owl";
-
+    //private static final String document_intersection = "../parking.owl";
+    private static final String document_intersection = "../geidorfplatzkreuzung.owl";
+    //private static final String document_intersection = "../intersection_not_legal.owl";
     /**
      * Examples of SPARQL with apache jena
      *
@@ -94,6 +94,7 @@ public class MainExpertSystem {
             QuerySolution sol = results.nextSolution();
             log.info("Solution: " + sol);
         }
+
         /*
         StmtIterator it = model.listStatements();
 
@@ -103,8 +104,8 @@ public class MainExpertSystem {
             Resource subject = stmt.getSubject();
             Property predicate = stmt.getPredicate();
             RDFNode object = stmt.getObject();
-            System.out.println(predicate.getLocalName() + " " + predicate.getNameSpace());
-            //System.out.println( subject.toString() + " " + predicate.toString() + " " + object.toString() );
+            //System.out.println(predicate.getLocalName() + " " + predicate.getNameSpace());
+            System.out.println( subject.toString() + " " + predicate.toString() + " " + object.toString() );
         }
         */
         /*log.info("Obtain the properties of the model");
