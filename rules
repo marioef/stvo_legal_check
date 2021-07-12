@@ -4,4 +4,4 @@
 
 [parking_forbidden: (?lane rdf:type ?laneType), (?laneType rdfs:subClassOf sys:Lane), (?car rdf:type ?carType), (?carType rdfs:subClassOf sys:Participants), (?lane sys:hasParticipant ?car), (?car sys:isParking ?lane),  listEqual(?laneType,sys:OneWayLane), print(?car,?lane) -> (?car sys:Situation "not legal"), print("parking_forbidden fired")]
 
-[rightRule: (?car1 sys:isOn ?lane1), (?lane1 sys:turnRightTo ?laneRight), (?car2 sys:isOn ?lane2), (?lane2 sys:isLaneOf ?lane2All), (?laneRight sys:isLaneOf ?lane2All), (?car1 sys:driveTo ?dest1), (?dest1 sys:isLaneOf ?dest1Lane), notEqual(?dest1Lane,?lane2All), (?car2 sys:isWaiting ?car1) -> (?car1 sys:Situation "not legal"), print("rightRule fired")]
+[rightRule: (?car1 sys:isOn ?lane1), (?lane1 sys:turnRightTo ?laneRight), (?car2 sys:isOn ?lane2), (?lane2 sys:isLaneOf ?lane2All), (?laneRight sys:isLaneOf ?lane2All), (?car1 sys:driveTo ?dest1), (?dest1 sys:isLaneOf ?dest1Lane), notEqual(?dest1Lane,?lane2All), (?car1 sys:isDriving ?current_street), (?car2 sys:isWaiting ?car1) -> (?car1 sys:Situation "not legal"), print("rightRule fired")]

@@ -1177,6 +1177,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <driveTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
         <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1Lane1"/>
         <isWaiting rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car2"/>
         <turnRightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
