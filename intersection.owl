@@ -77,6 +77,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#driveTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#driveTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo">
@@ -350,14 +360,6 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </rdf:Description>
     
 
 
@@ -1187,6 +1189,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car2">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <driveTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
         <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
         <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
         <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane1"/>
@@ -1199,6 +1202,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car3">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <driveTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2"/>
         <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadBRS1Lane2"/>
         <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Intersection"/>
         <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane1"/>
@@ -1253,6 +1257,7 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#StopLine"/>
             </owl:Restriction>
         </rdf:type>
+        <driveTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadDRS1Lane2"/>
         <goStraightTo rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadCRS1Lane2"/>
         <hasSign rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Stop4"/>
         <isLaneOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadARS1"/>
