@@ -57,7 +57,7 @@ public class MainExpertSystem {
 
 
     private static final String document_parking = "../parking.owl";
-    private static final String document_intersection = "../intersection_legal.owl";
+    private static final String document_intersection = "../intersection_not_legal.owl";
 
     /**
      * Examples of SPARQL with apache jena
