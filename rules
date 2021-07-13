@@ -2,10 +2,15 @@
 @prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:       <http://www.w3.org/2002/07/owl#> .
 
-[parking_forbidden: (?lane rdf:type ?laneType), (?laneType rdfs:subClassOf sys:Lane), (?car rdf:type ?carType), (?carType rdfs:subClassOf sys:Participants), (?lane sys:hasParticipant ?car), (?car sys:isParking ?lane), listEqual(?laneType,sys:OneWayLane) -> (?car sys:Situation "parking_forbidden fired"), print("parking_forbidden fired",?car)]
+[parking_forbidden: (?lane rdf:type ?laneType), (?laneType rdfs:subClassOf sys:Lane), (?car rdf:type ?carType), (?carType rdfs:subClassOf sys:Participants), (?lane sys:hasParticipant ?car), (?car sys:isParking ?lane), listEqual(?laneType,sys:OneWayLane) -> (?car sys:Situation "parking_forbidden fired")]
 
-[rightRule: (?car1 sys:isOn ?lane1), (?lane1 sys:turnRightTo ?laneRight), (?car2 sys:isOn ?lane2), (?lane2 sys:isLaneOf ?lane2All), (?laneRight sys:isLaneOf ?lane2All), (?car1 sys:driveTo ?dest1), (?dest1 sys:isLaneOf ?dest1Lane), notEqual(?dest1Lane,?lane2All), (?car1 sys:isDriving ?current_street), (?car2 sys:isWaiting ?car1), (?lane1 sys:hasSign ?lane1Sign), (?lane2 sys:hasSign ?lane2Sign), (?lane1Sign rdf:type ?lane1SignClass), (?lane2Sign rdf:type ?lane2SignClass), (?lane1SignClass rdfs:subClassOf sys:PrioritySigns), (?lane2SignClass rdfs:subClassOf sys:PrioritySigns), equal(?lane1SignClass,?lane2SignClass) -> (?car1 sys:Situation "rightRule fired"), print("rightRule fired",?car1)]
+[rightRule: (?car1 sys:isOn ?lane1), (?lane1 sys:turnRightTo ?laneRight), (?car2 sys:isOn ?lane2), (?lane2 sys:isLaneOf ?lane2All), (?laneRight sys:isLaneOf ?lane2All), (?car1 sys:driveTo ?dest1), (?dest1 sys:isLaneOf ?dest1Lane), notEqual(?dest1Lane,?lane2All), (?car1 sys:isDriving ?current_street), (?car2 sys:isWaiting ?car1), (?lane1 sys:hasSign ?lane1Sign), (?lane2 sys:hasSign ?lane2Sign), (?lane1Sign rdf:type ?lane1SignClass), (?lane2Sign rdf:type ?lane2SignClass), (?lane1SignClass rdfs:subClassOf sys:PrioritySigns), (?lane2SignClass rdfs:subClassOf sys:PrioritySigns), equal(?lane1SignClass,?lane2SignClass) -> (?car1 sys:Situation "rightRule fired")]
 
-[drivingTrafficLightRed: (?car sys:isOn ?laneOn), (?laneOn sys:relatedTrafficLight ?trafficLight), (?trafficLight sys:signalColour ?col), equal(?col,"red"), (?car sys:isDriving ?intersection) -> (?car sys:Situation "drivingTrafficLightRed fired"), print("drivingTrafficLightRed fired",?car)]
+[drivingTrafficLightRed: (?car sys:isOn ?laneOn), (?laneOn sys:relatedTrafficLight ?trafficLight), (?trafficLight sys:signalColour ?col), equal(?col,"red"), (?car sys:isDriving ?intersection) -> (?car sys:Situation "drivingTrafficLightRed fired")]
 
-[noEntryLaneDirection: (?car sys:isOn ?laneOn), (?laneOn sys:drivingDirection "toIntersection"), (?car sys:driveTo ?dest), (?dest sys:drivingDirection "toIntersection") -> (?car sys:Situation "noEntryLaneDirection fired"), print("noEntryLaneDirection fired",?car)]
+[noEntryLaneDirection: (?car sys:isOn ?laneOn), (?laneOn sys:drivingDirection "toIntersection"), (?car sys:driveTo ?dest), (?dest sys:drivingDirection "toIntersection") -> (?car sys:Situation "noEntryLaneDirection fired")]
+
+[giveWay: (?car sys:isOn ?lane), (?lane sys:hasSign ?sign), (?sign rdf:type ?signClass), (?signClass rdfs:subClassOf sys:PrioritySigns) -> (?car sys:giveWay ?lane)]
+[giveWayRelation: (?car sys:isOn ?lane), (?car sys:giveWay ?lane), (?carWay sys:isOn ?laneWay), noValue(?carWay,sys:hasSign) -> (?car sys:giveWay ?carWay)]
+[giveWayDrop: (?car1 sys:giveWay ?car2), (?car1 sys:giveWay ?lane1), (?car2 sys:giveWay ?lane2) -> remove(1)]
+[NoGiveWay: (?car1 sys:isOn ?lane1), (?car2 sys:isOn ?lane2), (?car1 sys:giveWay ?car2), (?car1 sys:isDriving ?intersection) -> (?car1 sys:Situation "noGiveWay fired")]

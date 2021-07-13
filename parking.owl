@@ -544,6 +544,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Audi">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
         <isDriving rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lilienthalgasse"/>
+        <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lilienthalgasse"/>
     </owl:NamedIndividual>
     
 
@@ -562,6 +563,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Skoda">
         <rdf:type rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Car"/>
+        <isOn rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lilienthalgasse"/>
         <isParking rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Lilienthalgasse"/>
     </owl:NamedIndividual>
 </rdf:RDF>
