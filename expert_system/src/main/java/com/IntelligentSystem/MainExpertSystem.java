@@ -33,9 +33,9 @@ public class MainExpertSystem {
 
 
     //private static final String document_intersection = "../parking.owl";
-    //private static final String document_intersection = "../geidorfplatzkreuzung.owl";
+    private static final String document_intersection = "../geidorfplatzkreuzung.owl";
     //private static final String document_intersection = "../intersection_not_legal.owl";
-    private static final String document_intersection = "../intersection_not_legal2.owl";
+    //private static final String document_intersection = "../intersection_not_legal2.owl";
     /**
      * Examples of SPARQL with apache jena
      *
