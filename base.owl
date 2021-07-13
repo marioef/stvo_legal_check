@@ -77,6 +77,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#driveTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#driveTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#Participants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#RoadPart"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2021/6/untitled-ontology-9#goStraightTo">
